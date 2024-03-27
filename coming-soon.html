@@ -97,25 +97,102 @@ data-toggle="modal" data-target="#register">Register Now</button>
 <!--/ callout button -->
 
 <!-- Modal -->
-<div class="modal fade" id="register"
-tabindex="-1"
-role="dialog"
-aria-labelledby="exampleModalLabel" aria-hidden="true">
-<!-- Modal Content -->
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- Modal Content -->
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Register for WordCamp Conference</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <h3 class="modal-title" id="exampleModalLabel">Register for WordCamp <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></h3>
       </div>
       <div class="modal-body">
-        ...
+        <!-- Alert -->
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  		  <strong>Hurry!</strong> Early bird registration ends in two days.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- Bootstrap Form -->
+        <form>
+          <div class="form-group">
+            <h3>Basic Info</h3>
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="occupation">Job Role:</label>
+            <select class="form-control" id="occupation">
+              <option value="developer">WordPress Developer</option>
+              <option value="designer">Designer</option>
+              <option value="marketer">Marketer</option>
+              <option value="student">Student</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-check">
+            <h3>Which Topics Interest You Most?</h3>
+            <input class="form-check-input" type="checkbox" value="" id="wordpressplugins">
+            <label class="form-check-label" for="wordpressplugins">WordPress Plugins</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="php">
+            <label class="form-check-label" for="php">PHP</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="cssandjavascript">
+            <label class="form-check-label" for="cssandjavascript">CSS and JavaScript</label>
+          </div>
+          <div class="form-row">
+            <h3>Payment Info</h3>
+            <div class="form-group col-md-6">
+              <label for="inputCardNumber4">Card Number:</label>
+              <input type="text" class="form-control" id="inputCardNumber4" placeholder="Enter your card number">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputZipCode4">Zip Code:</label>
+              <input type="text" class="form-control" id="inputZipCode4" placeholder="Enter zipcode">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputCVV4">CVV:</label>
+              <input type="password" class="form-control" id="inputCVV4" placeholder="Enter CVV">
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="expirationdate">Expiration Date:</label>
+            <div class="col">
+              <select class="form-control" id="expirationdate_month">
+                <option value="1">1 - January</option>
+                <option value="2">2 - February</option>
+                <option value="3">3 - March</option>
+                <option value="4">4 - April</option>
+                <option value="5">5 - May</option>
+                <option value="6">6 - June</option>
+                <option value="7">7 - July</option>
+                <option value="8">8 - August</option>
+                <option value="9">9 - September</option>
+                <option value="10">10 - October</option>
+                <option value="11">11 - November</option>
+                <option value="12">12 - December</option>
+              </select>
+            </div>
+            <div class="col">
+              <select class="form-control" id="expirationdate_year">
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+              </select>
+            </div>
+          </div>
+        </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary">Register</button>
       </div>
     </div>
   </div>
